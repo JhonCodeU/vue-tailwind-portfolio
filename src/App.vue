@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import HeroSection from './components/HeroSection.vue'
+import Services from './components/Services.vue'
 
 const theme = ref(null)
 
@@ -33,6 +34,9 @@ const handleThemeSwitch = () => {
 {{theme === 'light' ? '🌙' : '🌞'}}
 </button>
 <div class="font-inter bg:white dark:bg-slate-900">
-  <HeroSection />
+  <div class="max-2-5xl mx-auto w-11/12">
+    <HeroSection />
+    <Services />
+  </div>
 </div>
 </template>
