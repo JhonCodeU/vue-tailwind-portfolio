@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import HeroSection from './components/HeroSection.vue'
 import Services from './components/Services.vue'
+import Works from './components/Works.vue';
 
 const theme = ref(null)
 
@@ -36,10 +37,11 @@ const handleThemeSwitch = () => {
 <div class="font-inter bg:white dark:bg-slate-900">
   <div class="max-2-5xl mx-auto w-11/12">
     <HeroSection />
-        <fa icon="coffee"/>
+        <!-- <fa icon="coffee"/>
         <fa class="text-red-500" :icon="['fab','youtube']"/>
-        <fa :icon="['fab','github']"/>
+        <fa :icon="['fab','github']"/> -->
     <Services />
+    <Works/>
   </div>
 </div>
 </template>

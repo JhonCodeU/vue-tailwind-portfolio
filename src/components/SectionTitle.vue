@@ -10,7 +10,7 @@ export default {
     name: "SectionTitle",
     props: {
         id: {
-            type: Number,
+            type: String,
             required: true
         },
         title: {

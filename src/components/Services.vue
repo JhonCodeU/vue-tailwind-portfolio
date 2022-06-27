@@ -1,6 +1,6 @@
 <template>
 <div class="py-12">
-    <SectionTitle :title="title"></SectionTitle>
+    <SectionTitle :id="'services'" :title="title"></SectionTitle>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div v-for="item in services" :key="item.id">
             <ServiceItem :title="item.title" :icon="item.icon" :description="item.description"/>
