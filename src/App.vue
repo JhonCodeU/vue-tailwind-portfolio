@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import HeroSection from './components/HeroSection.vue'
 import Services from './components/Services.vue'
 import Works from './components/Works.vue';
+import Skills from './components/Skills.vue';
 
 const theme = ref(null)
 
@@ -42,6 +43,7 @@ const handleThemeSwitch = () => {
         <fa :icon="['fab','github']"/> -->
     <Services />
     <Works/>
+    <Skills/>
   </div>
 </div>
 </template>
