@@ -1,34 +1,34 @@
 export default [
     {
         title: "HTML5",
-        img: "../../public/images/html5.png"
+        img: "/images/html.png"
     },
     {
         title: "CSS3",
-        img: "../../public/images/css3.png"
+        img: "/images/css3.png"
     },
     {
         title: "JavaScript",
-        img: '../../public/images/js.png',
+        img: '/images/js.png',
     },
     {
         title: "Vue",
-        img: '../../public/images/vue.png',
+        img: '/images/vue.png',
     },
     {
         title: "NodeJs",
-        img: '../../public/images/nodejs.png',
+        img: '/images/nodejs.png',
     },
     {
         title: "MongoDB",
-        img: '../../public/images/mongodb.png',
+        img: '/images/mongodb.png',
     },
     {
         title: "Git",
-        img: '../../public/images/git.png',
+        img: '/images/git.png',
     },
     {
         title: "Docker",
-        img: '../../public/images/docker.png',
+        img: '/images/docker.png',
     }
 ]
