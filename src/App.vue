@@ -4,6 +4,8 @@ import HeroSection from './components/HeroSection.vue'
 import Services from './components/Services.vue'
 import Works from './components/Works.vue';
 import Skills from './components/Skills.vue';
+// import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 
 const theme = ref(null)
 
@@ -42,8 +44,10 @@ const handleThemeSwitch = () => {
         <fa class="text-red-500" :icon="['fab','youtube']"/>
         <fa :icon="['fab','github']"/> -->
     <Services />
-    <Works/>
-    <Skills/>
+    <Skills />
+    <Works />
+    <!-- <Contact/> -->
   </div>
+  <Footer />
 </div>
 </template>
