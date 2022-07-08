@@ -2,6 +2,8 @@
   "name": "vue-tailwind-portfolio",
   "private": true,
   "version": "1.0.0",
+  "description": "This is a Vue.js project for a portfolio website.",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
