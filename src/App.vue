@@ -48,6 +48,6 @@ const handleThemeSwitch = () => {
     <Works />
     <!-- <Contact/> -->
   </div>
-  <Footer />
+  <Footer :theme="theme"/>
 </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-slate-900 py-12">
+    <footer class="dark:bg-slate-900 bg-slate-300 py-12">
         <div class="container mx-auto">
             <div class="flex flex-col space-y-6 lg:space-y-0 items-center justify-between">
                 <div class="flex space-x-6 items-center justify-center">
@@ -11,18 +11,41 @@
                 </div>
                 <!-- logo -->
                 <div>
-                    <img width="300" src="https://upload.wikimedia.org/wikipedia/commons/8/85/Logo-Test.png"
+                    <img width="300" :src="logo"
                         alt="Logo JohnCode">
                 </div>
                 <!-- copyright -->
-                <p class="text-base text-gray-600 dark:text-gray-300">
-                    &copy; {{ author }}. All rights reserved.
+                <p class="text-base text-gray-800 dark:text-gray-300">
+                    &copy; {{ year }} {{ author }}. All rights reserved.
                 </p>
             </div>
         </div>
     </footer>
 </template>
-<script setup>
+<script>
+import logoDark from '/logos/logoDark.png'
+import logoLight from '/logos/logoLight.png'
 import social from '../data/social'
-const author = 'Jhon Arcila Castano'
+
+export default {
+    name: 'Footer',
+    props: {
+        theme: {
+            type: String,
+            default: 'light'
+        }
+    },
+    computed: {
+        logo() {
+            return this.theme === 'light' ? logoLight : logoDark
+        }
+    },
+    data() {
+        return {
+            year: new Date().getFullYear(),
+            author: 'Jhon Arcila Castano',
+            social
+        }
+    },
+}
 </script>
