@@ -11,16 +11,16 @@ const theme = ref(null)
 
 const setEffectTheme = () => {
   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    theme.value = 'dark'
-  } else {
     theme.value = 'light'
+  } else {
+    theme.value = 'dark'
   }
+  console.log('init', theme.value);
 }
-setEffectTheme()
 
 const useEffectTheme = () => {
-    console.log('works', theme.value);
-  if (theme.value === 'dark') {
+  console.log('works', theme.value);
+  if (theme.value === 'light') {
     document.documentElement.children[1].classList.remove('dark')
   } else {
     document.documentElement.children[1].classList.add('dark')
@@ -31,6 +31,8 @@ const handleThemeSwitch = () => {
   theme.value === 'dark' ? theme.value = 'light' : theme.value = 'dark'
   useEffectTheme()
 }
+
+setEffectTheme()
 </script>
 
 <template>

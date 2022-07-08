@@ -15,7 +15,7 @@
                     <img width="300" :src="logo" alt="Logo JohnCode">
                 </div>
                 <!-- copyright -->
-                <div>
+                <div class="items-center justify-center">
                     <p class="text-base text-gray-800 dark:text-gray-300">
                         &copy; {{ year }} {{ author }}. All rights reserved.
                     </p>
@@ -39,7 +39,7 @@ export default {
     },
     computed: {
         logo() {
-            return this.theme === 'light' ? logoLight : logoDark
+            return this.theme === 'light' ? logoDark : logoLight
         }
     },
     data() {
