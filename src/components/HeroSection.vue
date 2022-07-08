@@ -9,5 +9,5 @@
 </template>
 <script setup>
 const title = 'Hi, This is Jhon'
-const description = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, magni."
+const description = "I'm Jhon Arcila Castano, a software developer based in Manizales, Colombia. I'm a full-stack developer with a passion for building web applications."
 </script>

@@ -1,22 +1,26 @@
 export default [
     {
-        title: 'Portfolio',
-        imgUrl: 'https://picsum.photos/id/40/800/800',
-        tech: ['HTML', 'JavaScript', 'Vue', 'TailwindCSS'],
+        title: 'Chat-suma Frontend',
+        imgUrl: '/works/work-1.png',
+        url: '#',
+        tech: ['HTML', 'JavaScript', 'socket-client.io', 'Vue', 'Vuetify']
     },
     {
-        title: 'Chat',
-        imgUrl: 'https://picsum.photos/id/400/800/800',
-        tech: ['HTML', 'JavaScript', 'Vue', 'TailwindCSS'],
+        title: 'Chat-Suma Backend',
+        imgUrl: '/works/work-2.png',
+        url: '#',
+        tech: ['NodeJs', 'Express', 'MongoDB', 'Mongoose', 'socket.io', 'JWT', 'Swagger', 'Morgan']
     },
     {
-        title: 'Todo',
-        imgUrl: 'https://picsum.photos/id/200/800/800',
-        tech: ['HTML', 'JavaScript', 'Vue', 'TailwindCSS'],
+        title: 'Coin Gecko Vue',
+        imgUrl: '/works/work-3.png',
+        url: 'https://github.com/JhonCodeU/Coin-Market',
+        tech: ['HTML', 'JavaScript', 'Vue', 'Bootstrap']
     },
     {
-        title: 'Weather',
-        imgUrl: 'https://picsum.photos/id/100/800/800',
-        tech: ['HTML', 'JavaScript', 'Vue', 'TailwindCSS'],
+        title: 'Notes NoteJS',
+        imgUrl: '/works/work-4.png',
+        url: 'https://github.com/JhonCodeU/Socket.io-Nodejs-Mongodb-CRUD',
+        tech: ['HTML', 'JavaScript', 'NodeJS', 'socket.io', 'MongoDB']
     }
 ]

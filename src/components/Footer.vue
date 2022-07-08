@@ -2,6 +2,7 @@
     <footer class="dark:bg-slate-900 bg-slate-300 py-12">
         <div class="container mx-auto">
             <div class="flex flex-col space-y-6 lg:space-y-0 items-center justify-between">
+                 <!-- Icons -->
                 <div class="flex space-x-6 items-center justify-center">
                     <div v-for="item in social" :key="item.title">
                         <a class="text-base" :href="item.url">
@@ -11,13 +12,14 @@
                 </div>
                 <!-- logo -->
                 <div>
-                    <img width="300" :src="logo"
-                        alt="Logo JohnCode">
+                    <img width="300" :src="logo" alt="Logo JohnCode">
                 </div>
                 <!-- copyright -->
-                <p class="text-base text-gray-800 dark:text-gray-300">
-                    &copy; {{ year }} {{ author }}. All rights reserved.
-                </p>
+                <div>
+                    <p class="text-base text-gray-800 dark:text-gray-300">
+                        &copy; {{ year }} {{ author }}. All rights reserved.
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
