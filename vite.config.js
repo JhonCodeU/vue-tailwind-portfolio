@@ -10,9 +10,11 @@ export default defineConfig({
   },
   publicDir: 'public',
   server: {
+    host: 'localhost',
     port: 3000,
   },
   preview: {
-    port: 8000,
+    host: process.env.HOST || 'localhost',
+    port: process.env.PORT || 8080,
   },
 })
