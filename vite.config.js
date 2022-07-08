@@ -9,4 +9,10 @@ export default defineConfig({
     outDir: 'dist',
   },
   publicDir: 'public',
+  server: {
+    port: 3000,
+  },
+  preview: {
+    port: 8000,
+  },
 })
