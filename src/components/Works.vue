@@ -7,6 +7,7 @@
                 :title="work.title"
                 :imgUrl="work.imgUrl"
                 :tech="work.tech"
+                :url="work.url"
             />
         </div>
      </div> 
