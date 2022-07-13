@@ -11,11 +11,11 @@
                     </div>
                 </div>
                 <!-- logo -->
-                <div>
+                <div class="text-center items-center justify-center">
                     <img width="300" :src="logo" alt="Logo JohnCode">
                 </div>
                 <!-- copyright -->
-                <div class="items-center justify-center">
+                <div class="text-center items-center justify-center">
                     <p class="text-base text-gray-800 dark:text-gray-300">
                         &copy; {{ year }} {{ author }}. All rights reserved.
                     </p>
