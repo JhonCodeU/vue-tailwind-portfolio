@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-slate-300 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700
+    <div id="works" class="bg-slate-300 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700
         hover:-translate-y-2 transition transform rounded-md">
         <img class="w-full h-36 md:h-48 object-cover rounded-md" :src="imgUrl" :alt="title">
         <div class="text-gray-600 dark:text-gray-300 p-5 2-full">

@@ -11,7 +11,7 @@ export default [
     },
     {
         title: "Computer Engineer",
-        description: "I'm almost a Computer Engineer now, but I'm still learning new things. I'm also a fan of the latest technologies and I'm always trying to learn new things.",
+        description: "I'm almost a Computer Engineer now, I'm also a fan of the latest technologies and I'm always trying to learn new things. I'm also a big fan of the open-source community.",
         icon: "desktop"
     }
 ]
