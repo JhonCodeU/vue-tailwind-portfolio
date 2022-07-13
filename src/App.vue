@@ -11,7 +11,7 @@ import Footer from './components/Footer.vue';
 const theme = ref(null)
 
 const setEffectTheme = () => {
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  if (window.matchMedia('(prefers-color-scheme: light)').matches) {
     theme.value = 'light'
   } else {
     theme.value = 'dark'
@@ -22,14 +22,14 @@ const setEffectTheme = () => {
 const useEffectTheme = () => {
   console.log('works', theme.value);
   if (theme.value === 'light') {
-    document.documentElement.children[1].classList.remove('dark')
-  } else {
     document.documentElement.children[1].classList.add('dark')
+  } else {
+    document.documentElement.children[1].classList.remove('dark')
   }
 }
 
 const handleThemeSwitch = () => {
-  theme.value === 'dark' ? theme.value = 'light' : theme.value = 'dark'
+  theme.value === 'light' ? theme.value = 'dark' : theme.value = 'light'
   useEffectTheme()
 }
 
@@ -38,7 +38,7 @@ setEffectTheme()
 
 <template>
 <button type="button" @click="handleThemeSwitch" class="fixed z-10 right-2 top-2 bg-indigo-500 text-lg p-1 rounded-md">
-{{theme === 'light' ? '🌙' : '🌞'}}
+{{theme === 'dark' ? '🌙' : '🌞'}}
 </button>
 <div class="font-inter bg:white dark:bg-slate-900">
   <div class="max-2-5xl mx-auto w-11/12">

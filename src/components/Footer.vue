@@ -34,12 +34,12 @@ export default {
     props: {
         theme: {
             type: String,
-            default: 'light'
+            default: 'dark'
         }
     },
     computed: {
         logo() {
-            return this.theme === 'light' ? logoDark : logoLight
+            return this.theme === 'dark' ? logoDark : logoLight
         }
     },
     data() {
