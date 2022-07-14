@@ -3,6 +3,7 @@
         <SectionTitle :id="'works'" :title="'Recent Works'"/>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <WorkItem
+                @show-modal="loadModal"
                 v-for="(work, index) in works" :key="index"
                 :title="work.title"
                 :imgUrl="work.imgUrl"
@@ -10,6 +11,7 @@
                 :url="work.url"
             />
         </div>
+        <Modal :hidden="showModal" :url="modalUrl" :closeModal="closeModal" />
      </div> 
 </template>
 
@@ -17,15 +19,29 @@
 import SectionTitle from './SectionTitle.vue'
 import WorkItem from './WorkItem.vue'
 import works from '../data/works'
+import Modal from './Modal.vue'
 export default {
     name: 'Works',
     components: {
         SectionTitle,
-        WorkItem
+        WorkItem,
+        Modal
     },
     data() {
         return {
-            works
+            works,
+            showModal: false,
+            modalUrl: ''
+        }
+    },
+    methods: {
+        closeModal() {
+            console.log('focusout');
+            this.showModal = false
+        },
+        loadModal(url){
+            this.showModal = true
+            this.modalUrl = url
         }
     }
 }
