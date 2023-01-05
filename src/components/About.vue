@@ -11,11 +11,12 @@
             </a>
         </div>
 
-        <img src="https://media-exp2.licdn.com/dms/image/C5603AQH1xHVMrj8izw/profile-displayphoto-shrink_800_800/0/1657030234654?e=1663200000&v=beta&t=cfcqSvn3-yV1CwYIVIc7mCjVDNCLAjem85SN7grWcSc" alt="Jhon" width="200" class="rounded-lg object-cover" />
+        <img :src="picture" alt="Jhon" width="200" class="rounded-lg object-cover" />
     </div>
 </template>
 <script>
 import SectionTitle from './SectionTitle.vue'
+import pictureProfile from '/profile/my-photo.png'
 export default {
     name: 'About',
     components: {
@@ -23,12 +24,10 @@ export default {
     },
     data() {
         return {
+            picture: pictureProfile,
             message: 'Hello Vue!',
-            email: 'Jhondeiber3030@gmail.com',
-            description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-					veniam dolor consectetur pariatur explicabo, iure nulla. Dolor
-					debitis, natus cum ad, fugiat excepturi minima culpa atque modi
-					accusantium vel voluptatem?`
+            email: 'johnarcilaca@gmail.com',
+            description: `Jhon Arcila Castano is a software developer with a passion for building web applications and a desire to constantly improve his skills. As a full-stack developer, he has experience in a variety of programming languages and frameworks, and is always looking for new challenges to tackle. Jhon is dedicated to delivering high-quality software solutions and is committed to staying up to date on the latest trends in the industry. In his free time, he enjoys learning about new technologies and staying up to date on the latest developments in the field. Overall, Jhon is a highly motivated and driven developer with a strong commitment to excellence.`
         }
     }
 }
