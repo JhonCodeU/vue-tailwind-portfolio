@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   root: './',
+  base: '/vue-tailwind-portfolio/',
   build: {
     outDir: 'dist',
   },
