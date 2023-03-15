@@ -5,13 +5,14 @@
             <WorkItem
                 @show-modal="loadModal"
                 v-for="(work, index) in works" :key="index"
+                :id="work.id"
                 :title="work.title"
                 :imgUrl="work.imgUrl"
                 :tech="work.tech"
                 :url="work.url"
             />
         </div>
-        <Modal :hidden="showModal" :url="modalUrl" :closeModal="closeModal" />
+         <Modal :hidden="!showModal" :images="modalImages" :title="modalTitle" @closeModal="closeModal" />
      </div> 
 </template>
 
@@ -31,7 +32,9 @@ export default {
         return {
             works,
             showModal: false,
-            modalUrl: ''
+            modalUrl: '',
+            modalImages: [],
+            modalTitle: '',
         }
     },
     methods: {
@@ -39,10 +42,14 @@ export default {
             console.log('focusout');
             this.showModal = false
         },
-        loadModal(url){
-            this.showModal = true
-            this.modalUrl = url
-        }
+        loadModal (id) {
+            this.showModal = true;
+
+            const work = this.works.find(work => work.id === id);
+            
+            this.modalTitle = work.title;
+            this.modalImages = work.images;
+        },
     }
 }
 </script>

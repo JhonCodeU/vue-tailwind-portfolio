@@ -18,6 +18,10 @@ import ToastifyBase from '../libs/toastify'
 export default {
     name: 'Works',
     props: {
+        id: {
+            type: Number,
+            default: 0
+        },
         title: {
             type: String,
             default: ''
@@ -45,8 +49,8 @@ export default {
                 window.location.href = this.url
             }
         },
-        showModal() {
-            this.$emit('show-modal', this.imgUrl)
+        showModal () {
+            this.$emit('show-modal', this.id)
         }
     }
 }
