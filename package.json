@@ -1,7 +1,7 @@
 {
   "name": "vue-tailwind-portfolio",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This is a Vue.js project for a portfolio website.",
   "license": "MIT",
   "scripts": {
@@ -16,6 +16,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/vue-fontawesome": "^3.0.1",
     "gh-pages": "^4.0.0",
+    "npm-check-updates": "^16.10.7",
     "toastify-js": "^1.11.2",
     "vue": "^3.2.25"
   },
