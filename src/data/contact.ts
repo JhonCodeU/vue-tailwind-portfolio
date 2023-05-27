@@ -1,4 +1,11 @@
-export default [
+export interface Contact {
+    icon: string;
+    title: string;
+    subtitle: string;
+    description: string;
+}
+
+const contacts: Contact[] = [
     {
         icon: 'message',
         title: 'Have a question?',
@@ -12,3 +19,5 @@ export default [
         description: 'Serving clients worldwide',
     }
 ]
+
+export default contacts;

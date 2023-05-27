@@ -1,4 +1,10 @@
-export default [
+export interface Service {
+    title: string;
+    description: string;
+    icon: string;
+}
+
+export const services: Service[] = [
     {
         title: "Software development",
         description: "I am a software developer with a passion for building software that is user-friendly and easy to use. I have worked with a wide range of technologies, JavaScript, Node, Docker and more.",
@@ -15,3 +21,5 @@ export default [
         icon: "desktop"
     }
 ]
+
+export default services;

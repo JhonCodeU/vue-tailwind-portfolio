@@ -2,7 +2,7 @@ import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
 
 
-const ToastifyBase = (text, type) => {
+const ToastifyBase = (text: string, type: any) => {
     return Toastify({
       text,
       position: "left",

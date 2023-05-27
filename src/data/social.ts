@@ -1,4 +1,11 @@
-export default [
+export interface Social {
+    title: string;
+    icon: string;
+    color: string;
+    url: string;
+}
+
+export const socials: Social[] = [
     {
         title: 'LinkedIn',
         icon: 'linkedin',
@@ -24,3 +31,5 @@ export default [
         url: '#'
     }
 ]
+
+export default socials;

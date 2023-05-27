@@ -30,11 +30,24 @@
     </div>
   </footer>
 </template>
-<script >
+<script lang="ts">
 import logoDark from '/logos/logoDark.png'
 import logoLight from '/logos/logoLight.png'
 import social from '../data/social'
 import {defineComponent} from 'vue'
+
+interface SocialItem {
+  title: string
+  url: string
+  color: string
+  icon: string
+}
+
+interface FooterData {
+  year: number
+  author: string
+  social: SocialItem[]
+}
 
 export default defineComponent({
   name: 'Footer',
@@ -49,10 +62,10 @@ export default defineComponent({
       return this.theme === 'dark' ? logoDark : logoLight
     }
   },
-  data() {
+  data(): FooterData {
     return {
       year: new Date().getFullYear(),
-      author: 'Jhon Arcila Castano',
+      author: 'Jhon Arcila Castano' as string,
       social
     }
   }

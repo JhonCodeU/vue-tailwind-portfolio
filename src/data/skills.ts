@@ -1,4 +1,9 @@
-export default [
+export interface Skill {
+    title: string;
+    img: string;
+}
+
+export const skills: Skill[] = [
     {
         title: "HTML5",
         img: "./images/html.png"
@@ -32,3 +37,5 @@ export default [
         img: './images/docker.png',
     }
 ]
+
+export default skills;
