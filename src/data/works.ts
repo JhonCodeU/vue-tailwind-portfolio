@@ -1,4 +1,13 @@
-export default [
+export interface Work {
+    id: number;
+    title: string;
+    imgUrl: string;
+    images: string[];
+    url: string;
+    tech: string[];
+}
+
+const works: Work[] = [
     {
         id: 1,
         title: 'App of expenses',
@@ -40,3 +49,5 @@ export default [
         tech: ['HTML', 'JavaScript', 'NodeJS', 'socket.io', 'MongoDB']
     }
 ]
+
+export default works;
